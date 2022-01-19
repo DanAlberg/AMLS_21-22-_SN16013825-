@@ -1,0 +1,11 @@
+ipywidgets==7.6.5
+matplotlib
+numpy
+pandas
+pywavelets
+scikit-image
+scikit-learn
+scipy
+tqdm
+tensorflow
+joblib
