@@ -239,15 +239,13 @@ plt.figure(figsize=(8, 8))
 plt.subplot(2, 1, 1)
 plt.plot(acc, label='Training Accuracy')
 plt.plot(val_acc, label='Validation Accuracy')
-plt.plot([Starting_Epochs-1,Starting_Epochs-1],
-          plt.ylim(), label='Fine Tuning Started')
+plt.plot([Starting_Epochs-1,Starting_Epochs-1], plt.ylim(), label='Fine Tuning Started')
 plt.legend(loc='lower right')
 plt.title('Accuracy (Training/Validation)')
 plt.subplot(2, 1, 2)
 plt.plot(loss, label='Training Loss')
 plt.plot(val_loss, label='Validation Loss')
-plt.plot([Starting_Epochs-1,Starting_Epochs-1],
-         plt.ylim(), label='Fine Tuning Started')
+plt.plot([Starting_Epochs-1,Starting_Epochs-1], plt.ylim(), label='Fine Tuning Started')
 plt.legend(loc='upper right')
 plt.title('Loss (Training/Validation)')
 plt.xlabel('Epoch')
@@ -258,7 +256,6 @@ plt.show()
 
 predictions = numpy.array([])
 labels = numpy.array([])
-# Obtain the predictions from test dataset
 for x, y in tqdm(Testing_Dataset):
   predictions = numpy.concatenate([predictions, numpy.argmax(model.predict(x), axis=-1)])
   labels = numpy.concatenate([labels, x.numpy()])
