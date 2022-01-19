@@ -1,4 +1,4 @@
-ipywidgets==7.6.5
+ipywidgets
 matplotlib
 numpy
 pandas
@@ -9,3 +9,4 @@ scipy
 tqdm
 tensorflow
 joblib
+jupyter
