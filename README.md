@@ -25,13 +25,24 @@ https://drive.google.com/file/d/1LS_C_4_iOeqOyEoWPPoksrk8lqdBKagB/view
 
 # Requirements
 ipywidgets
+
 matplotlib
+
 numpy
+
 pandas
+
 pywavelets
+
 scikit-image
+
 scikit-learn
+
 scipy
+
 tqdm
+
 tensorflow
+
 joblib
+
